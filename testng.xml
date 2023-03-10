@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Test Suite" parallel = "tests">
+    <test name="Test Standard User">
+        <parameter name="name" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
+        <classes>
+            <class name="org.example.project.LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Test Performance Glitch User">
+        <parameter name="name" value="performance_glitch_user"/>
+        <parameter name="password" value="secret_sauce"/>
+        <classes>
+            <class name="org.example.project.LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
